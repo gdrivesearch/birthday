@@ -1,0 +1,117 @@
+@charset 'Shift_JIS';
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+
+/*reset-----------------------------------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, 
+fieldset, input, textarea, p, th, td, figure{
+	margin: 0; 
+	padding: 0;
+}
+html{
+	font-size: 62.5%;
+	overflow-y: scroll;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 100%; 
+	font-weight: normal;
+}
+ol, ul{
+	list-style:none;
+}
+fieldset, img{
+	border:0;
+}
+table{
+	border-collapse: collapse; 
+	border-spacing:0;
+}
+caption, th{
+	text-align: left;
+}
+address, caption, cite, code, dfn, th, var,em,i{
+	font-style: normal; 
+	font-weight: normal;
+}
+img{border:none;}
+/*-------------------------------------------------------------------*/
+
+html{}
+
+body {
+	min-width:640px;
+	overflow:hidden;
+	background:#eeedea;
+	font-size: 1.2em;
+	line-height:2em;
+	color:#000;
+	letter-spacing: normal;
+	-webkit-text-size-adjust: 100%;
+	_display: inline;
+	_zoom:1;
+	font-family:"ƒqƒ‰ƒMƒmŠpƒS Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "ƒƒCƒŠƒI" , Meiryo , "‚l‚r ‚oƒSƒVƒbƒN" , "MS PGothic" , sans-serif;
+	}
+input, button, textarea, select {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+a{transition:opacity 0.3s ease-in-out 0s; color:#666}
+a:hover{opacity:0.7;}
+img{vertical-align:bottom;}
+em,i{font-style:normal;}
+
+/*-------------------------------------------------------------------*/
+
+#wrapper_{background:url(bg.gif) center top; padding-bottom:75px;}
+
+#wrapper_ > header{padding:0 0 25px;}
+#wrapper_ > header > h1{font-size:4.5rem; font-family: 'EB Garamond', serif; color:#a43200; text-align:center; padding:40px 0;}
+#wrapper_ > header > h1:after{display:block; content:""; width:100%; height:3px; background:#f8560f; margin-top:0.15em;}
+#wrapper_ > header > figure{width:640px; margin:0 auto;}
+#wrapper_ > header > .mail{width:640px; background:#fff; padding:25px; box-sizing:border-box; margin:15px auto 0;}
+#wrapper_ > header > .mail p{font-size:1.6rem; line-height:1.8em;}
+
+#wrapper_ > header > .mail > .to{margin-bottom:25px; position:relative;}
+#wrapper_ > header > .mail > .to:before{display:block;content:"To";font-size:2.0rem;color:#ca0606;position:absolute;top:0;left:0;z-index:2;}
+#wrapper_ > header > .mail > .to > p{padding:0 8em 1em 3em; border-bottom:1px #ca0606 solid; position:relative;}
+#wrapper_ > header > .mail > .to > p:after{display:block; content:"—l"; font-size:1.6rem; color:#ca0606; position:absolute; bottom:1em; right:0;}
+#wrapper_ > header > .mail > .message{position:relative; min-height:116px;}
+#wrapper_ > header > .mail > .message:before{display:block;content:"Message";font-size:2.0rem;color:#ca0606;position:absolute;top:-0.8em;left:0;z-index:2;}
+#wrapper_ > header > .mail > .message > p{width:470px; padding:1em; box-sizing:border-box; background:#f2f0e7; border-radius:12px; position:relative;}
+#wrapper_ > header > .mail > .message > p:after{display:block; content:""; width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 16px; border-color: transparent transparent transparent #f2f0e7; position:absolute; top:20%; right:-16px;}
+#wrapper_ > header > .mail > .message > figure{position:absolute; top:0; right:0;}
+
+
+#wrapper_ > .body{background:#eeedea;}
+#wrapper_ > .body > .inn{width:640px; padding:25px; box-sizing:border-box; margin:0 auto;}
+#wrapper_ > .body p{font-size:1.2rem; line-height:2em;}
+
+/*-------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+body{min-width:100%;}
+#wrapper_{background:url(bg.gif) center top; padding-bottom:38px;}
+
+#wrapper_ > header{padding:0 0 25px;}
+#wrapper_ > header > h1{font-size:4.5rem; font-size:7vw; font-family: 'EB Garamond', serif; color:#a43200; text-align:center; padding:20px 0;}
+#wrapper_ > header > h1:after{display:block; content:""; width:100%; height:3px; background:#f8560f; margin-top:0.15em;}
+#wrapper_ > header > figure{width:100%; margin:0 auto; position: relative; padding-top: 56.25%;}
+#wrapper_ > header > figure img{width:100%; height:auto;}
+#wrapper_ > header > figure iframe{position: absolute; top: 0; right: 0; width: 100% !important; height: 100% !important;}
+#wrapper_ > header > .mail{width:100%; background:#fff; padding:25px; box-sizing:border-box; margin:15px auto 0;}
+#wrapper_ > header > .mail p{font-size:1.6rem; font-size:4vw; line-height:1.8em;}
+#wrapper_ > header > .mail > .to{margin-bottom:1em; position:relative;}
+#wrapper_ > header > .mail > .to:before{display:block; content:"To"; font-size:2.0rem; font-size:5vw; color:#ca0606; position:absolute; top:0; left:0;}
+#wrapper_ > header > .mail > .to > p{padding:0 2em 1em 2em; border-bottom:1px #ca0606 solid; position:relative;}
+#wrapper_ > header > .mail > .to > p:after{display:block; content:"—l"; font-size:1.6rem; font-size:4vw; color:#ca0606; position:absolute; bottom:1em; right:0;}
+#wrapper_ > header > .mail > .message{position:relative;}
+#wrapper_ > header > .mail > .message:before{display:block; content:"Message"; font-size:2.0rem;  font-size:5vw; color:#ca0606; position:static; top:0; left:0;}
+#wrapper_ > header > .mail > .message > p{width:100%; padding:0; box-sizing:border-box; background:none; border-radius:12px; position:relative;}
+#wrapper_ > header > .mail > .message > p:after{display:none; content:""; width: 0; height: 0; border-style: solid; border-width: 10px 0 10px 16px; border-color: transparent transparent transparent #f2f0e7; position:absolute; top:30px; right:-16px;}
+#wrapper_ > header > .mail > .message > figure{position:static; top:0; right:0; margin:1em 0;}
+
+
+#wrapper_ > .body{background:#eeedea;}
+#wrapper_ > .body > .inn{width:100%; padding:20px; box-sizing:border-box; margin:0 auto;}
+#wrapper_ > .body p{font-size:1.2rem; font-size:3vw; line-height:2em;}
+
+
+
+}
